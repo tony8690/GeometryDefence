@@ -78,6 +78,8 @@ p { margin-bottom: 20px; }
 .feature-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
 .feature-card { padding: 30px; border: 1px solid var(--line); border-radius: var(--radius); background: linear-gradient(135deg, rgba(18, 29, 48, .72), rgba(13, 20, 35, .5)); }
 .feature-card--wide { grid-column: span 2; background: radial-gradient(ellipse at 100% 0%, #008cff12, transparent 65%), linear-gradient(135deg, #121d30b8, #0d142380); }
+.feature-card--cloud { grid-column: 1 / -1; border-color: #59e6ff55; }
+.feature-card--cloud > p:not(.card-kicker) { max-width: 70ch; }
 .card-kicker { font-size: .64rem; letter-spacing: .13em; font-weight: 700; color: var(--muted); margin-bottom: 12px; }
 .feature-card p:last-child { margin-bottom: 0; }
 .feature-card p:not(.card-kicker) { color: var(--muted); font-size: .9rem; line-height: 1.85; }
